@@ -69,6 +69,33 @@ t.forward(100)
 t.right(90)
 t.forward(70)
 
+#Candle
+def candle (x,y):
+       t.color("black")
+       t.penup()
+       t.goto(x,y)
+       t.pendown()
+       t.begin_fill
+       for i in range(2):
+             t.forward(7)
+             t.left(90)
+             t.forward(25)
+             t.left(90)
+       t.end_fill()
+     
+       t.color("black", "yellow")
+       t.begin_fill()
+       for i in range(2):
+             t.forward(7)
+             t.right(90)
+             t.forward(10)
+             t.right(90)
+       t.end_fill()
+
+candle(55, 150)
+candle(5, 150)
+candle(-50, 150)
+
 #Text
 t.color ('Red')
 t.penup()
